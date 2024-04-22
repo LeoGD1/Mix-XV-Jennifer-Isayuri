@@ -1,0 +1,36 @@
+.loader {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--text-color-dark);
+    text-align: center;
+}
+
+.loader__h1 {
+    font-family: var(--text-titles);
+    font-size: 2.2em;
+}
+
+.loader__p {
+    font-family: var(--text-subtitles);
+    font-size: 1.3rem;
+}
+
+/* HTML: <div class="loader"></div> */
+.LOADER {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 3px;
+    background: 
+      radial-gradient(farthest-side,#fff 95%,#0000) 50% 0/12px 12px no-repeat,
+      radial-gradient(farthest-side,#0000 calc(100% - 5px),#fff calc(100% - 4px)) content-box;
+    animation: l6 2s infinite ;
+  }
+  @keyframes l6 {to{transform: rotate(1turn)}}
+  

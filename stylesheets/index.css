@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Playball&family=Vollkorn&display=swap');
+
+:root {
+    --primary-color: #A784F8;
+    --text-color-light: #000;
+    --text-color-dark: #fff;
+    --text-titles: 'Playball', cursive;;
+    --text-subtitles: 'Vollkorn', serif;
+    --text-paragraph: 'Diphylleia', serif;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--text-paragraph);
+}
