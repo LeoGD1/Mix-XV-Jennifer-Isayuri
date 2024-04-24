@@ -40,7 +40,7 @@
 
 @media screen and (min-width: 768px) {
     .principal {
-        background: linear-gradient(to bottom, transparent, 40%, var(--primary-color)),
+        background: linear-gradient(to bottom, transparent, 70%, var(--primary-color)),
                     url('/images/i-p2.jpg');
         background-repeat: no-repeat;
         background-size: cover;

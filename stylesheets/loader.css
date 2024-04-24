@@ -12,28 +12,35 @@
     gap: 20px;
     color: var(--text-color-dark);
     text-align: center;
+    z-index: 999;
+    clip-path: inset(0 0 0 0);
+    transition: clip-path 1s ease-out;
+    -webkit-transition: clip-path 1s ease-out;
+    -moz-transition: clip-path 1s ease-out;
+    -ms-transition: clip-path 1s ease-out;
+    -o-transition: clip-path 1s ease-out;
 }
 
-.loader__h1 {
-    font-family: var(--text-titles);
-    font-size: 2.2em;
+.loader__img {
+    width: 9rem;
+    animation: animacionLogo 3s;
+    -webkit-animation: animacionLogo 3s;
+    opacity: 0;
 }
 
-.loader__p {
-    font-family: var(--text-subtitles);
-    font-size: 1.3rem;
+.loader.open {
+    clip-path: inset(0 0 100% 0);
 }
 
-/* HTML: <div class="loader"></div> */
-.LOADER {
-    width: 50px;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    padding: 3px;
-    background: 
-      radial-gradient(farthest-side,#fff 95%,#0000) 50% 0/12px 12px no-repeat,
-      radial-gradient(farthest-side,#0000 calc(100% - 5px),#fff calc(100% - 4px)) content-box;
-    animation: l6 2s infinite ;
-  }
-  @keyframes l6 {to{transform: rotate(1turn)}}
-  
+
+@keyframes animacionLogo {
+    0%, 100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+    
+}
+
